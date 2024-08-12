@@ -89,7 +89,7 @@
                   <!--class input para padronizar todos os input-->
                   <form class="input">
                       <!--inputs onde receberam os dados dinamicos usuario para passar para proxima pagina-->
-                      <input type="text" name="form_name" id="form_name_usuario" placeholder="   Alterar nome completo:">
+                      <input type="text" class="form_name" name="form_name" id="form_name_usuario" placeholder="   Alterar nome completo:">
                   </form>
               </div>
               <div class="box">
@@ -99,22 +99,23 @@
               </div>
               <div class="box">
                   <form class="input">
-                      <input type="text" name="form_telefone" id="form_telefone_usuario" placeholder="   Novo Telefone:">
+                      <input type="text" class="form_telefone" name="form_telefone" id="form_telefone_usuario" placeholder="   Novo Telefone:">
                   </form>
               </div>
               <div class="box">
                   <form class="input">
-                      <input type="date" name="form_nascimento" id="form_nascimento_usuario" placeholder="   Nova data de nascimento::">
+                      <input type="date" class="form_nascimento" name="form_nascimento" id="form_nascimento_usuario" placeholder="   Nova data de nascimento::">
                   </form>
               </div>
             </div>
             <div class="concluir">
-              <a href="../paginas/dados_usuario.html" target="_self"  onclick="receberNomeUsuario()">
+              <a href="../paginas/dados_usuario.html" target="_self" onclick="receberNomeUsuario(), atualizarUser()">
                   <button type="button">Salvar</button>
               </a>
           </div>
         </main>
     </div>
-    <script src="../script/script.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/script_conexao.js"></script>
 </body>
 </html>
